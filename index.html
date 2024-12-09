@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <title>Web-to-Lead Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 12px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DKd000007VqmP" method="POST">
+            <input type="hidden" name="oid" value="00DKd000007VqmP">
+            <input type="hidden" name="retURL" value="http://www.google.com">
+            
+            <label for="company">Company</label>
+            <input id="company" maxlength="40" name="company" type="text" />
+
+            <label for="first_name">First Name</label>
+            <input id="first_name" maxlength="40" name="first_name" type="text" />
+
+            <label for="last_name">Last Name</label>
+            <input id="last_name" maxlength="80" name="last_name" type="text" />
+
+            <label for="email">Email</label>
+            <input id="email" maxlength="80" name="email" type="text" />
+
+            <label for="phone">Phone</label>
+            <input id="phone" maxlength="40" name="phone" type="text" />
+
+            <label for="url">Website</label>
+            <input id="url" maxlength="80" name="url" type="text" />
+
+            <label for="street">Street</label>
+            <textarea name="street"></textarea>
+
+            <label for="city">City</label>
+            <input id="city" maxlength="40" name="city" type="text" />
+
+            <label for="state">State/Province</label>
+            <input id="state" maxlength="20" name="state" type="text" />
+
+            <label for="zip">Zip</label>
+            <input id="zip" maxlength="20" name="zip" type="text" />
+
+            <label for="country">Country</label>
+            <input id="country" maxlength="40" name="country" type="text" />
+
+            <label for="00NKd00000T4CIs">Product Family</label>
+            <select id="00NKd00000T4CIs" name="00NKd00000T4CIs" title="Product Family">
+                <option value="">--None--</option>
+                <option value="Food">Food</option>
+                <option value="Biomedical">Biomedical</option>
+                <option value="Algae">Algae</option>
+            </select>
+
+            <label for="00NKd00000T4CIu">Specification Type</label>
+            <select id="00NKd00000T4CIu" name="00NKd00000T4CIu" title="Specification Type">
+                <option value="">--None--</option>
+                <option value="Budgetary">Budgetary</option>
+                <option value="Sample">Sample</option>
+                <option value="Production">Production</option>
+            </select>
+
+            <label for="00NKd00000T4CJF">Details</label>
+            <textarea id="00NKd00000T4CJF" name="00NKd00000T4CJF" rows="3"></textarea>
+
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
